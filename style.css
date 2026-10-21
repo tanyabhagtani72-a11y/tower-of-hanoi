@@ -1,0 +1,103 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #fff5f5;
+    color: #38252a;
+    margin: 0;
+    padding: 25px;
+}
+
+h1 {
+    color: #a51d3d;
+}
+
+select, button {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 6px;
+    border: 1px solid #d6a2ad;
+}
+
+button {
+    background: #a51d3d;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #74142b;
+}
+
+.rods {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 35px auto;
+    max-width: 700px;
+}
+
+.rod {
+    width: 30%;
+    min-height: 240px;
+    background: #f5dfe4;
+    border-bottom: 8px solid #8c5260;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tower {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 180px;
+    width: 100%;
+}
+
+.disk {
+    height: 25px;
+    border-radius: 8px;
+    margin-top: 3px;
+    background: #c83758;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#stack {
+    background: #f5dfe4;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    text-align: left;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+#history {
+    display: inline-block;
+    text-align: left;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .rods {
+        gap: 8px;
+    }
+
+    .rod {
+        min-height: 200px;
+    }
+
+    .tower {
+        min-height: 150px;
+    }
+}

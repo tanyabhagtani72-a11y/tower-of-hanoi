@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Tower of Hanoi</h1>
+    <p>DSA Mini Project - Recursion and Stack</p>
+
+    <label for="disks">Choose number of disks:</label>
+    <select id="disks">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+    <label for="mode">Choose method:</label>
+    <select id="mode">
+        <option value="recursive">Recursive</option>
+        <option value="stack">Stack</option>
+    </select>
+
+    <div class="rods">
+        <div class="rod">
+            <h3>Rod A</h3>
+            <div id="A" class="tower"></div>
+        </div>
+
+        <div class="rod">
+            <h3>Rod B</h3>
+            <div id="B" class="tower"></div>
+        </div>
+
+        <div class="rod">
+            <h3>Rod C</h3>
+            <div id="C" class="tower"></div>
+        </div>
+    </div>
+
+    <h3 id="status">Ready to start!</h3>
+    <p>Moves: <span id="moves">0</span></p>
+    <p>Minimum moves: <span id="minimum">7</span></p>
+
+    <button id="next">Next Move</button>
+    <button id="play">Play</button>
+    <button id="reset">Reset</button>
+
+    <h2>Algorithm Explanation</h2>
+    <p id="explanation">
+        Select a method and start the puzzle.
+    </p>
+
+    <h2>Stack / Function Calls</h2>
+    <pre id="stack">No operations yet.</pre>
+
+    <h2>Move History</h2>
+    <ol id="history"></ol>
+
+    <script src="script.js"></script>
+</body>
+</html>
